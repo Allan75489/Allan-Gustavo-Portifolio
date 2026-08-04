@@ -1,0 +1,105 @@
+.project-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 13, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 200;
+}
+
+.project-modal {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.project-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 17, 23, 0.7);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  z-index: 2;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.project-modal__close:hover {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--color-secondary);
+}
+
+.project-modal__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.project-modal__body {
+  padding: 28px;
+}
+
+.project-modal__category {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+}
+
+.project-modal__title {
+  font-size: 1.5rem;
+  margin: 8px 0 14px;
+}
+
+.project-modal__description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.project-modal__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-secondary);
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.project-modal__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .project-modal__actions {
+    flex-direction: column;
+  }
+  .project-modal__actions .btn {
+    width: 100%;
+  }
+}

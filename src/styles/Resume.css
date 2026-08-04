@@ -1,0 +1,54 @@
+.resume__card {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: clamp(36px, 6vw, 56px);
+  box-shadow: var(--shadow-card);
+}
+
+.resume__card .eyebrow,
+.resume__card .section-title {
+  justify-content: center;
+}
+
+.resume__card .eyebrow {
+  display: flex;
+}
+
+.resume__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: var(--radius-md);
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+}
+
+.resume__description {
+  color: var(--text-secondary);
+  margin: 0 auto 32px;
+  max-width: 460px;
+}
+
+.resume__actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .resume__actions {
+    flex-direction: column;
+  }
+  .resume__actions .btn {
+    width: 100%;
+  }
+}
