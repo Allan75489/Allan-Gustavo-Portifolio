@@ -42,7 +42,7 @@ export default function Hero() {
 
           <motion.div variants={item} className="hero__actions">
             <Button
-              href="#projetos"
+              href="https://alan-projects.vercel.app/"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" });

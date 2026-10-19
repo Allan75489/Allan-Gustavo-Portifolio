@@ -1,8 +1,3 @@
-/**
- * Fonte única de dados das habilidades.
- * Os nomes de ícone são resolvidos em src/components/IconMap.jsx,
- * mantendo este arquivo livre de JSX (dados puros).
- */
 export const skills = [
   {
     id: 1,
@@ -34,7 +29,6 @@ export const skills = [
     itens: [
       { nome: "MySQL", icon: "SiMysql" },
       { nome: "PostgreSQL", icon: "SiPostgresql" },
-      { nome: "H2", icon: "SiH2Database" },
     ],
   },
   {
@@ -47,11 +41,5 @@ export const skills = [
       { nome: "VS Code", icon: "VscVscode" },
       { nome: "Figma", icon: "FaFigma" },
     ],
-  },
-  {
-    id: 5,
-    categoria: "Cloud",
-    icon: "FaCloud",
-    itens: [{ nome: "AWS", icon: "FaAws" }],
   },
 ];
